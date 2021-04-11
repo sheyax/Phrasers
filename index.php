@@ -21,7 +21,7 @@ try {
     $mail->Username   = 'ayosheyax@gmail.com';                     //SMTP username
     $mail->Password   = 'saxydee23';                               //SMTP password
     $mail->SMTPSecure = 'tls';         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 25;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
    // $mail->SMTPKeepAlive = true;   
    // $mail->Mailer = “smtp”; // don't change the quotes!
