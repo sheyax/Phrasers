@@ -3,6 +3,7 @@
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\STMP;
 
 require 'src/Exception.php';
 require 'src/PHPMailer.php';
@@ -27,7 +28,7 @@ try {
    // $mail->Mailer = “smtp”; // don't change the quotes!
 
     //Recipients
-    $mail->setFrom('ayosheyax@gmail.com', 'sax', 0);
+    $mail->setFrom('ayosheyax@gmail.com');
     $mail->addAddress('ayosheyax@gmail.com');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
