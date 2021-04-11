@@ -12,7 +12,7 @@ require 'src/SMTP.php';
 //Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
-try {
+
     //Server settings
     //$mail->SMTPDebug = SMTP::DEBUG_SERVER; 
     $mail->SMTPDebug = 2;                     //Enable verbose debug output
@@ -47,6 +47,6 @@ try {
 
     $mail->send();
     echo 'Message has been sent';
-} catch (Exception $e) {
+  catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
