@@ -27,8 +27,8 @@ try {
    // $mail->Mailer = “smtp”; // don't change the quotes!
 
     //Recipients
-    $mail->setFrom('ayosheyax@gmail.com', 'Mailer');
-    $mail->addAddress('saxdasax@gmail.com', 'Joe User');     //Add a recipient
+    $mail->setFrom('saxdasax@gmail.com', 'Mailer');
+    $mail->addAddress('ayosheyax@gmail.com', 'Joe User');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
