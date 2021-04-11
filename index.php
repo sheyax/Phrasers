@@ -15,7 +15,7 @@ try {
     //Server settings
     //$mail->SMTPDebug = SMTP::DEBUG_SERVER; 
     $mail->SMTPDebug = 2;                     //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
+    //$mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'ayosheyax@gmail.com';                     //SMTP username
@@ -27,8 +27,8 @@ try {
    // $mail->Mailer = “smtp”; // don't change the quotes!
 
     //Recipients
-    $mail->setFrom('ayosheyax@gmail.com');
-    $mail->addAddress('saxdasax@gmail.com', 'Joe User');     //Add a recipient
+    $mail->setFrom('ayosheyax@gmail.com', 'sax', 0);
+    $mail->addAddress('ayosheyax@gmail.com');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
