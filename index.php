@@ -18,8 +18,8 @@ try {
     $mail->isMAIL();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'ayosheyax@gmail.com';                     //SMTP username
-    $mail->Password   = 'saxydee23';                               //SMTP password
+    $mail->Username   = '';                     //SMTP username
+    $mail->Password   = '';                               //SMTP password
     $mail->SMTPSecure = 'tls';         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 25;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
@@ -27,8 +27,8 @@ try {
    // $mail->Mailer = “smtp”; // don't change the quotes!
 
     //Recipients
-    $mail->setFrom('saxdasax@gmail.com', 'Mailer');
-    $mail->addAddress('ayosheyax@gmail.com', 'Joe User');     //Add a recipient
+    $mail->setFrom('', 'Mailer');
+    $mail->addAddress('', 'Joe User');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
